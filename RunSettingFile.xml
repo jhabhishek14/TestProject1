@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSetting>
+	<Nuint>
+		<NumberOfTestWorker> 2</NumberOfTestWorker>
+	</Nuint>
+	<TestRunParameter>
+		<Parameter name="URL" value =""/>
+		<Parameter name="ChromeOptionsBrowser" value =""/>
+		
+		<Parameter name="User" value =""/>
+	
+	
+
+
+
+	</TestRunParameter>
+
+</RunSetting>
