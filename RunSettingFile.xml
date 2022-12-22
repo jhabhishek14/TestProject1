@@ -4,10 +4,24 @@
 		<NumberOfTestWorker> 2</NumberOfTestWorker>
 	</Nuint>
 	<TestRunParameter>
+		<!--Staging Url options-->
 		<Parameter name="URL" value =""/>
-		<Parameter name="ChromeOptionsBrowser" value =""/>
+		<!--====================================================================================-->
 		
-		<Parameter name="User" value =""/>
+		<!--This is how long selenium will wait for an element to load prior to timeout-->
+		<Parameter name="ElementWaitTimeInSeconds" value ="10"/>
+		
+		<!--=====================================================================================-->
+		
+		<!--Browser options-->
+		<Parameter name="Browser" value ="chrome"/>
+		<!--<Parameter name="Browser" value ="edge"/>-->
+		<!--<Parameter name="Browser" value ="firefox"/>-->
+		<!--<Parameter name="Browser" value ="IE"/>-->
+
+		<!--=====================================================================================-->
+		
+		
 	
 	
 
