@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.DevTools.V106.Browser;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TestProject1.Model;
+using WebDriverManager.DriverConfigs.Impl;
 
 namespace TestProject1
 {
@@ -37,6 +39,11 @@ namespace TestProject1
         {var  Browser = testContext.["Browser"].ToString(); }
 
 
+        public void BrowserLunch()
+        {
+            new WebDriverManager.DriverManager().SetUpDriver(new ChromeConfig());
+            Chromedriver driver = new ChromeDriver();
+        }
         
 
     }
