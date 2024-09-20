@@ -30,8 +30,8 @@ namespace Misc
             WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(8));
             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(By.XPath("//input[@title='Search']")));
 
-            JavascriptExecutor jsExec = (JavascriptExecutor)driver;
-            jsExec.executeScript("document.getElementById('field_to_clear').value=''");
+            //JavascriptExecutor jsExec = (JavascriptExecutor)driver;
+            //jsExec.executeScript("document.getElementById('field_to_clear').value=''");
 
 
 
@@ -51,17 +51,18 @@ namespace Misc
 
             driver.FindElement(By.XPath("//a/h3")).Click();
             TestContext.WriteLine("ABC");
-           IWebElement Dropdown = driver.FindElement(By.Id("day"));
+            IWebElement Dropdown = driver.FindElement(By.Id("day"));
             SelectElement s = new SelectElement(Dropdown);
             s.SelectByText("14");
 
             String[] a = { "hi", "", "" };
             int[] b = { 1, 2, 3 };
             ArrayList AL = new ArrayList();
-            foreach(IWebElement A in AL)
-            {
+        }
+            //foreach(IWebElement A in AL)
+            //{
                 
-            }
+            //}
 
        
     }
